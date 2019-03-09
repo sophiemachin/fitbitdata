@@ -4,7 +4,14 @@ import Plot from 'react-plotly.js';
 const titleFont = {
   family:'Roboto, sans-serif',
   size:14,
-  color:'red',
+  // color:'red',
+}
+
+const tickFont = {
+  family:'Roboto, sans-serif',
+  size:14,
+  // color:'green',
+
 }
 
 function formatData(data) {
@@ -52,11 +59,13 @@ class APlot extends React.Component {
             {
               title:'Day',
               titlefont: titleFont,
+              tickfont: tickFont,
             },
           yaxis:
             {
               title:'Weight (kg)',
               titlefont: titleFont,
+              tickfont: tickFont,
             }
         }}
       />

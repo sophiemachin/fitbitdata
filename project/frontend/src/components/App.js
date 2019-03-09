@@ -9,12 +9,14 @@ import Typography from '@material-ui/core/Typography';
 const App = () => (
 <div>
 	<TopBar/>
+	<div style={{display:'flex', justifyContent: 'center'}}>
 	<Typography>Typography</Typography>
  	 <DataProvider 
  	 	endpoint="api/weight/" 
         render={data => <APlot data={data} />}
       />
         
+</div>
 </div>
 );
 
