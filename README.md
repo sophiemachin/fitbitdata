@@ -16,5 +16,38 @@ Choosing time periods isn't partocularly useful. For example, the 'view month' o
 
 ## Implementation
 
-I think I'll use Python and React to do some more useful data visualistation. I'll use the pandas package to manipulate the data and either matplotlib or plotly for the display. 
+### Database
+
+The data is stored in an SQLite3 databse. 
+
+### Data importing
+
+The raw data is from a datadump directly from Fitbit. The json files are converted using python scripts to match the database tables described in `models.py`
+
+In a later version I'll be using the Fitbit API.
+
+### Backend and API
+
+The backend uses Django with the Django REST framework.
+
+The API lives in the leads directory. 
+
+### Front end
+
+The main site uses ReactJS, which is loaded into the Django `index.html` template. 
+
+### Graphing
+
+The graphing tools for the project are from
+
+## Using the package
+
+To build the front end:
+
+`npm run dev`
+
+To run the server: 
+
+'python manage.py runserver'
+
 
