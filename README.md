@@ -40,8 +40,9 @@ The front end uses [npm](https://www.npmjs.com/) as the package manager.
 
 The graphing tools for the project are from [Plotly](https://plot.ly/)
 
-## Using the package
+## Running the app locally
 
+You can run the app locally and view it in your browser. 
 
 ### To build the front end:
 
