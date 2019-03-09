@@ -9,10 +9,11 @@ class Lead(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
 
 
-# class Lead(models.Model):
-#     logId = models.IntegerField(unique=True)
-#     weight = models.FloatField()
-#     bmi = models.FloatField()
-#     fat = models.FloatField()
-#     date = models.DateField()
-#     time = models.TimeField()
+class Weight(models.Model):
+    logId = models.IntegerField(primary_key=True, unique=True)
+    weight = models.FloatField()
+    bmi = models.FloatField()
+    fat = models.FloatField()
+    date = models.DateTimeField()
+    source = models.CharField(max_length=10)
+
