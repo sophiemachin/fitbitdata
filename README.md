@@ -4,7 +4,7 @@ At the moment this project is for my own amusement, though if you want to use it
 
 ## Motivation
 
-This project started because I was unhappy with some of the ways [Fitbit](https://www.fitbit.com/uk/home) was presenting my activity, sleep and heartrate data. Some of the graphs were really clunky. The scaling is not always helpful and the custom time scales aren't relative to the current day. 
+This project was started to better process and visualise the data from a [Fitbit](https://www.fitbit.com/uk/home) wearable device, as well as the Fitbit Aria2 scale, in order to more usefullly analyse the data. The issue this app overcomes is the scaling presets provided by the Fitbit app.
 
 ### Vertical scaling
 
