@@ -26,7 +26,10 @@ SECRET_KEY = ')7fta4m57hhc#(i%fs9*-=@7z!8esn@!9qfoefs(9-=uxz@x$r'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'guarded-tor-60924.herokuapp.com'
+    'guarded-tor-60924.herokuapp.com',
+    'localhost',
+    '0.0.0.0',
+    '127.0.0.1',
 ]
 
 

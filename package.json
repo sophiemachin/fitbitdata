@@ -23,5 +23,9 @@
     "weak-key": "^1.0.1",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.2.3"
+  },
+  "dependencies": {
+    "plotly.js": "^1.45.2",
+    "react-plotly.js": "^2.3.0"
   }
 }
