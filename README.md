@@ -18,7 +18,7 @@ Choosing time periods isn't partocularly useful. For example, the 'view month' o
 
 ### Data importing
 
-The raw data is from a datadump directly from Fitbit. The json files are converted using python scripts to match the database tables described in `models.py`. The output of Janurary and February 2019 are located in `fixtures`. 
+The raw data is from a datadump directly from Fitbit. The json files are converted using Python 3.6 scripts to match the database tables described in `models.py`. The output of Janurary and February 2019 are located in `fixtures`. 
 
 In a later version I'll be using the [Fitbit API](https://dev.fitbit.com/build/reference/web-api/).
 
@@ -34,6 +34,8 @@ The backend uses Django with the [Django REST framework](https://www.django-rest
 
 The main site uses [ReactJS](https://reactjs.org/), which is loaded into the Django `index.html` template. 
 
+The front end uses [npm](https://www.npmjs.com/) as the package manager.
+
 ### Graphing
 
 The graphing tools for the project are from [Plotly](https://plot.ly/)
@@ -43,11 +45,11 @@ The graphing tools for the project are from [Plotly](https://plot.ly/)
 
 ### To build the front end:
 
-Install the packages listed in `package.json` using
+Install the npm packages listed in `package.json` using
 
 `npm install`
 
-Once this has installed (may take a few minutes), run a development build of the front end using:
+Once this has installed (may take a few minutes), run a development build of the frontend using:
 
 `npm run dev`
 
@@ -55,6 +57,6 @@ Once this has installed (may take a few minutes), run a development build of the
 
 Install the python packages in `requirements.txt`. 
 
-'python manage.py runserver'
+`python manage.py runserver`
 
 
