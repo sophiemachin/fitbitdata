@@ -22,7 +22,7 @@ function formatData(data) {
     'y': [],
     type: 'scatter',
     'x0' : 'date',
-    mode: 'lines+points',
+    mode: 'points',
     marker: {color: '#3f51b5'},
   }
 
