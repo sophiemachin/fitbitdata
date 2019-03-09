@@ -6,11 +6,9 @@ converted = []
 
 pk = 1
 
-
 os.chdir(".")
 
 for f in sorted(glob.glob("*.json")):
-	# print(f)
 
 	with open(f) as f:
 		data = json.load(f)
