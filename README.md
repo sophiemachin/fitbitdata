@@ -8,11 +8,11 @@ This project was started to better process and visualise the data from a [Fitbit
 
 ### Vertical scaling
 
-The vertical scale is always unhelpful. For example, my heart rate is always between 40 and 180, but the graph scaling goes from 0 - 220. 
+The vertical scale is not personalised. For example, my heart rate is always between 40 and 180, but the graph scaling goes from 0 - 220. 
 
 ### Horizontal scaling and time periods
 
-Choosing time periods isn't partocularly useful. For example, the 'view month' or 'view year' options only show calendar months rather than the previous 31 or 365 days. So if it's currently June 15th you won't be able to see the previous 31 days data at once, or the previous 365 days at once. You'll have to view June and May separately to get the data. 
+Choosing time periods isn't particularly useful. For example, the 'view month' or 'view year' options only show calendar months rather than the previous 31 or 365 days. So if it's currently June 15th you won't be able to see the previous 31 days data at once, or the previous 365 days at once. You'll have to view June and May separately to get the data. 
 
 ## Implementation
 
