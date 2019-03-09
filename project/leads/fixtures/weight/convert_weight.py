@@ -9,7 +9,8 @@ pk = 1
 
 os.chdir(".")
 
-for f in glob.glob("*.json"):
+for f in sorted(glob.glob("*.json")):
+	# print(f)
 
 	with open(f) as f:
 		data = json.load(f)
@@ -19,6 +20,8 @@ for f in glob.glob("*.json"):
 			date_obj = datetime.datetime.strptime(item['date'], '%m/%d/%y')
 			formated_date = datetime.datetime.strftime(date_obj, '%Y-%m-%d')
 			item['date'] = formated_date
+
+			print(formated_date)
 
 			del item["time"]
 			new_obj = {

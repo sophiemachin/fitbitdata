@@ -1,11 +1,17 @@
 import React from 'react';
 import Plot from 'react-plotly.js';
 
+function sortByDate(a, b) {
+  return a.date - b.date;
+}
+
+
 
 function formatData(data) {
 
   let x = 1
 
+const sorted = data.sort(sortByDate)
 
   var formatted = {
     'x' : [],
@@ -16,11 +22,11 @@ function formatData(data) {
     marker: {color: 'red'},
   }
 
-  for (let date of data) {
-    // console.log(date)
+  for (let date of sorted) {
+    console.log(date)
 
     formatted.x.push(date.date)
-    formatted.y.push(date.weight)
+    formatted.y.push(date.weight / 2.2046)
     x = x + 1
   }
 
