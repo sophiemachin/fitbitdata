@@ -9,30 +9,27 @@ import Typography from '@material-ui/core/Typography';
 const introText = "This app processes a data export from Fitbit and " + 
 "presents it using the Plotly graphing tool."
 
-const dateText = "I started cutting on 1st January 2019 with the intention of hitting 72kg by " + 
-"7th April 2019."
+const dateText = "Data collection started on the 1st of January 2019 with the intention of tracking changes in weight over the coming months."
 
-const scaleText = "Weight was collected using the Fitbit Aria2 scales."
+const scaleText = "Data was collected using the Fitbit Aria2 scales and processed using Python scripts."
 
-const doubleWeigh = "Sometimes I weighed myself twice in one day." 
 
+const all = introText + dateText + scaleText
 const App = () => (
 <div>
 	<TopBar/>
-	<div style={{display:'flex', flexDirection:'column', justifyContent:'cent'}}>
+	<div style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
 
-		<div style={{alignSelf: 'center'}}>
+		<div style={{alignSelf: 'center', maxWidth:'600px', width:'100%'}}>
 			<DataProvider 
 	 	 		endpoint="api/weight/" 
 	        	render={data => <APlot data={data} />}
 	      	/>
 		</div>
 
-		<div style={{alignSelf: 'center'}}>
-			<Typography>{introText}</Typography>
-			<Typography>{dateText}</Typography>
-			<Typography>{scaleText}</Typography>
-			<Typography>{doubleWeigh}</Typography>
+		<div style={{alignSelf: 'center', maxWidth:'600px'}}>
+			<Typography>{all}</Typography>
+
 		</div>
 
         

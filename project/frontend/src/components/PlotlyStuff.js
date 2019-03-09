@@ -49,10 +49,10 @@ class APlot extends React.Component {
         layout={{
           width: 640,
           height: 480,
-          title: 'Weight data - 2019',
+          title: 'Changes in weight over time',
           font : {
             family:'Roboto, sans-serif',
-            size:18,
+            size:16,
             color:'#7f7f7f',
           },
           xaxis:
