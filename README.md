@@ -4,7 +4,7 @@ At the moment this project is for my own personal use, though if you want to use
 
 ## Motivation
 
-This project was started to better process and visualise the data from a [Fitbit](https://www.fitbit.com/uk/home) wearable device, as well as the Fitbit Aria2 scale, in order to more usefullly analyse the data. The issue this app overcomes is the scaling presets provided by the Fitbit app.
+This project was started to better process and visualise the data from a [Fitbit](https://www.fitbit.com/uk/home) wearable device, as well as the Fitbit Aria2 scale, in order to more usefully analyse the data. The issue this app overcomes is the scaling presets provided by the Fitbit app.
 
 ### Vertical scaling
 
