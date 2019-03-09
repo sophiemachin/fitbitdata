@@ -60,4 +60,8 @@ Install the python packages in `requirements.txt`.
 
 `python manage.py runserver`
 
+Visit http://127.0.0.1:8000/
 
+If you make changes to the Javascript, rebuild using npm.
+
+You may need to force refresh your browser for changes to be visible. 
