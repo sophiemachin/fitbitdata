@@ -1,6 +1,6 @@
 # fitbitdata
 
-At the moment this project is for my own amusement, though if you want to use it feel free! 
+At the moment this project is for my own personal use, though if you want to use it feel free! 
 
 ## Motivation
 
