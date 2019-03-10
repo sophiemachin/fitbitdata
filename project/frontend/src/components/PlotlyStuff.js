@@ -47,10 +47,10 @@ class APlot extends React.Component {
         data={[formattedData]}
 
         layout={{
-          width: 640,
+          width: 580,
           height: 400,
           margin: {
-            l: 80,
+            l: 60,
             r: 10,
             b: 80,
             t: 20,
