@@ -20,6 +20,11 @@ const App = () => (
 	<TopBar/>
 	<div style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
 
+		<div style={{alignSelf: 'center'}}>
+			<Typography variant="title" style={{color:'gray'}}>Changes in weight over time</Typography>
+		</div>
+
+
 		<div style={{alignSelf: 'center', maxWidth:'600px', width:'100%'}}>
 			<DataProvider 
 	 	 		endpoint="api/weight/" 

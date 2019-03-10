@@ -37,6 +37,7 @@ function TopBar(props) {
           </Typography>
 
           <IconButton 
+            color="highlight"
             href="https://github.com/sophiemachin/fitbitdata"
             className={classes.button}
             aria-label="View this project on GitHub"
