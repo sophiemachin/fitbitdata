@@ -48,10 +48,10 @@ class APlot extends React.Component {
 
         layout={{
           width: 640,
-          height: 480,
+          height: 400,
           margin: {
             l: 80,
-            r: 80,
+            r: 10,
             b: 80,
             t: 20,
             },
