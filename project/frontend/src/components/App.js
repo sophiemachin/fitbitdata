@@ -33,7 +33,7 @@ const App = () => (
 		</div>
 
 		<div style={{alignSelf: 'center', maxWidth:'600px'}}>
-			<Typography>{all}</Typography>
+			<Typography variant="body1">{all}</Typography>
 
 		</div>
 

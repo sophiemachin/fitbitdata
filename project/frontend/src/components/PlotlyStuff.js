@@ -50,9 +50,9 @@ class APlot extends React.Component {
           width: 640,
           height: 480,
           margin: {
-            l: 100,
-            r: 100,
-            b: 100,
+            l: 80,
+            r: 80,
+            b: 80,
             t: 20,
             },
           xaxis:
