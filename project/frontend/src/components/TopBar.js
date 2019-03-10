@@ -36,11 +36,15 @@ function TopBar(props) {
             Fitbit data
           </Typography>
 
-          <IconButton color="primary" className={classes.button} aria-label="Add to shopping cart">
-            <PhotoCamera />
+          <IconButton 
+            href="https://github.com/sophiemachin/fitbitdata"
+            className={classes.button}
+            aria-label="View this project on GitHub"
+          >
+            <i className="fab fa-github"/>
           </IconButton>
 
-              <i className="fab fa-github"/>
+              
 
         </Toolbar>
       </AppBar>
