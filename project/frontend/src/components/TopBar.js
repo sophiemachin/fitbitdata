@@ -11,7 +11,7 @@ import PhotoCamera from '@material-ui/icons/PhotoCamera';
 const styles = theme => ({
   root: {
     flexGrow: 1,
-    paddingBottom: 10,
+    paddingBottom: 80,
   },
   grow: {
     flexGrow: 1,
@@ -29,7 +29,7 @@ function TopBar(props) {
   const { classes } = props;
   return (
     <div className={classes.root}>
-      <AppBar position="static">
+      <AppBar position="fixed">
         <Toolbar>
 
           <Typography variant="h6" color="inherit" className={classes.grow}>
@@ -37,7 +37,7 @@ function TopBar(props) {
           </Typography>
 
           <IconButton 
-            color="highlight"
+            // color="default"
             href="https://github.com/sophiemachin/fitbitdata"
             className={classes.button}
             aria-label="View this project on GitHub"
