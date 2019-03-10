@@ -6,9 +6,9 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
+import PhotoCamera from '@material-ui/icons/PhotoCamera';
 
-
-const styles = {
+const styles = theme => ({
   root: {
     flexGrow: 1,
     paddingBottom: 10,
@@ -20,7 +20,10 @@ const styles = {
     marginLeft: -12,
     marginRight: 20,
   },
-};
+  button: {
+    margin: theme.spacing.unit,
+  },
+});
 
 function TopBar(props) {
   const { classes } = props;
@@ -32,6 +35,12 @@ function TopBar(props) {
           <Typography variant="h6" color="inherit" className={classes.grow}>
             Fitbit data
           </Typography>
+
+          <IconButton color="primary" className={classes.button} aria-label="Add to shopping cart">
+            <PhotoCamera />
+          </IconButton>
+
+              <i className="fab fa-github"/>
 
         </Toolbar>
       </AppBar>
