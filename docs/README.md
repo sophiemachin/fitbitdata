@@ -4,7 +4,7 @@ View the [live app here](https://guarded-tor-60924.herokuapp.com/)
 
 <button onclick="https://guarded-tor-60924.herokuapp.com/">View the live app here</button>
 
-{% include button.html url="http://www.google.com" %}
+{% include button.html url="https://guarded-tor-60924.herokuapp.com/" %}
 
 At the moment this project is for my own personal use, though if you want to use it feel free! 
 
