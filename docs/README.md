@@ -2,10 +2,9 @@
 
 View the [live app here](https://guarded-tor-60924.herokuapp.com/)
 
-<button href="http://www.google.com">asdasdas</button>
+<button onclick="https://guarded-tor-60924.herokuapp.com/">View the live app here</button>
 
-[button url="http://www.google.com"]
-
+{% include button.html url="http://www.google.com" %}
 
 At the moment this project is for my own personal use, though if you want to use it feel free! 
 
