@@ -18,13 +18,31 @@ Choosing time periods isn't particularly useful. For example, the 'view month' o
 
 ### Data importing
 
-The raw data is from a datadump directly from Fitbit. The json files are converted using Python 3.6 scripts to match the database tables described in `models.py`. The output of Janurary and February 2019 are located in `fixtures`. 
+The raw data is from a datadump directly from Fitbit. The json files are converted using Python 3.6 scripts to match the database tables described in `models.py`. 
+
+From the /leads/fixtures/weight directory:
+
+    python3 convert_weight.py
+    
+The output is located in the file called `fixtures/weight.json`. 
 
 In a later version I'll be using the [Fitbit API](https://dev.fitbit.com/build/reference/web-api/).
 
 ### Database
 
-The data is stored in an SQLite3 databse. 
+The data is stored in an SQLite3 database. 
+
+When the weight.json file as been imported and converted
+
+To install data for first use, run
+
+    python3 manage.py loaddata
+    
+To install new data, it's easiest to reset the database. This will come with a warning that all data will be lost:
+
+    python3 manage.py flush
+   
+Then re-run loaddata. 
 
 ### Backend and API
 
@@ -58,7 +76,7 @@ Once this has installed (may take a few minutes), run a development build of the
 
 Install the python packages in `requirements.txt`. 
 
-`python manage.py runserver`
+`python3 manage.py runserver`
 
 Visit http://127.0.0.1:8000/
 
