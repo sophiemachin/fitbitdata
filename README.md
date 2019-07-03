@@ -94,3 +94,8 @@ You may need to force refresh your browser for changes to be visible.
     SyntaxError: invalid syntax
 
 Use `python3` to run manage.py files not `python`
+
+
+    django.db.utils.IntegrityError: Problem installing fixture: NOT NULL constraint failed
+    
+You are trying to install null data into a field with a not null constraint. Sometimes Fitbit has missing data. You could remove that data point.  I might write a check in convert_weight.py to make sure missing data doesn't make its way to the database.
